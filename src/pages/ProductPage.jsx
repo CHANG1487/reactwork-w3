@@ -279,6 +279,9 @@ function ProductPage() {
                   <input
                     type="text"
                     className="form-control"
+                    id="title"
+                    name="title"
+                    value={tempProduct.title}
                     onChange={handleInputChange}
                   />
                 </div>
@@ -296,6 +299,7 @@ function ProductPage() {
                     className="form-control"
                     id="category"
                     name="category"
+                    value={tempProduct.category}
                     onChange={handleInputChange}
                   />
                 </div>
@@ -333,6 +337,7 @@ function ProductPage() {
                       id="origin_price"
                       name="origin_price"
                       value={tempProduct.origin_price}
+                      min="0"
                       onChange={handleInputChange}
                     />
                   </div>
@@ -351,6 +356,7 @@ function ProductPage() {
                       id="price"
                       name="price"
                       value={tempProduct.price}
+                      min="0"
                       onChange={handleInputChange}
                     />
                   </div>
